@@ -29,6 +29,12 @@
         <version>2.0.5.RELEASE</version>
     </parent>
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+            <scope>provided</scope>
+        </dependency>
         <!--测试的依赖包-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

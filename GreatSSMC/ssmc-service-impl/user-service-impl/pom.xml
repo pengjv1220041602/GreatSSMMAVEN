@@ -12,9 +12,17 @@
     <artifactId>user-service-impl</artifactId>
 
     <dependencies>
+
         <dependency>
+            <!--引入service-->
             <artifactId>user-api-service</artifactId>
             <groupId>com.great</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--引入实体类-->
+        <dependency>
+            <groupId>com.great</groupId>
+            <artifactId>ssmc-entry</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

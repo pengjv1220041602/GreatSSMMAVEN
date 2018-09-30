@@ -1,5 +1,7 @@
 package com.great.api.service;
 
+import com.great.entry.User;
+
 /**
  * @Author ZhPJ
  * @Date 2018/9/29 002917:07
@@ -7,5 +9,5 @@ package com.great.api.service;
  * @Description:
  */
 public interface IOtherUserService {
-    void getUser();
+    User getUser(String id, String name);
 }

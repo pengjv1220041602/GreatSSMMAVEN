@@ -1,11 +1,7 @@
 spring:
   cloud:
     consul:
-      host: localhost
+      host: 127.0.0.1
       port: 8500
-      discovery:
-        healthCheckPath: ${management.server.servlet.context-path}/health
-        healthCheckInterval: 15s
-        tags:  foo = userSericeImpl #服务的tag，自定义，可以根据这个tag来区分同一个服务名的服务
 server.port: 9098
 spring.application.name: user-service-impl
