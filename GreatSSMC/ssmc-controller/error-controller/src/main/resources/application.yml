@@ -6,7 +6,6 @@ spring:
   mvc:
     view:
       suffix: .html
-
       prefix: classpath:/templates/
 server.port: 9001
-spring.application.name: user-service-impl
+spring.application.name: error-controller

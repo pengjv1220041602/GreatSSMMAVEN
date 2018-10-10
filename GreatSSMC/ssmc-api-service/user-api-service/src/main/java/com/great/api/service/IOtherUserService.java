@@ -1,6 +1,7 @@
 package com.great.api.service;
 
 import com.great.entry.User;
+import org.springframework.web.bind.annotation.RequestPart;
 
 /**
  * @Author ZhPJ
@@ -9,5 +10,13 @@ import com.great.entry.User;
  * @Description:
  */
 public interface IOtherUserService {
+    /**
+     * @deprecated: 获取对应的id和名称
+     *
+     * @param: 用户的id和用户的名称
+     * @return:
+     */
     User getUser(String id, String name);
+
+
 }
