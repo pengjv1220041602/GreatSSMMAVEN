@@ -16,7 +16,6 @@ public interface IOtherUserService {
      * @param: 用户的id和用户的名称
      * @return:
      */
-    User getUser(String id, String name);
-
+//    User getUser(String id, String name);
 
 }

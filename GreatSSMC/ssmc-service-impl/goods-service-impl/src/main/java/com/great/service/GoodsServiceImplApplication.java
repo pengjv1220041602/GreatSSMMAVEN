@@ -1,20 +1,18 @@
-package com.great.controller;
+package com.great.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @Author ZhPJ
- * @Date 2018/10/10 00108:49
+ * @Date 2018/10/10 001014:33
  * @Version 1.0
  * @Description:
  */
 @SpringBootApplication
-@EnableDiscoveryClient
-public class UserControllerApplication {
+public class GoodsServiceImplApplication {
     public static void main(String[] args) {
-        SpringApplication.run(UserControllerApplication.class, args);
+        SpringApplication.run(GoodsServiceImplApplication.class,args);
     }
 }

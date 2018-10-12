@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+  data:
+      mongodb:
+        uri: mongodb://localhost:27017
+        database: userLog
+server.port: 9011
+spring.application.name: user-log

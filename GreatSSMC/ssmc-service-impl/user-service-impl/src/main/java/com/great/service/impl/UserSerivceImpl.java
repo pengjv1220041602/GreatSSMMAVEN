@@ -1,7 +1,8 @@
 package com.great.service.impl;
 
-import com.great.api.service.IUserServuce;
-import org.springframework.stereotype.Controller;
+import com.great.api.service.IUserService;
+import com.great.entry.User;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -11,17 +12,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @Version 1.0
  * @Description:
  */
-@RequestMapping("/user1")
-@Controller
-public class UserSerivceImpl extends OtherUserServiceImpl implements IUserServuce {
+@Service
+public class UserSerivceImpl implements IUserService {
 
-    @RequestMapping("/list")
+    @RequestMapping("/user/{id}/{name}")
     @ResponseBody
-    public String getUserByList() {
-        return "/error-page.html";
-    }
-    @RequestMapping("error1")
-    public String error1() {
-        return "error-page";
+    @Override
+    public User getUser() {
+        return new User("1", "222");
     }
 }

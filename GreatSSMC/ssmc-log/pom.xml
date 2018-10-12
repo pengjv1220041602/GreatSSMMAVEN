@@ -9,19 +9,27 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ssmc-api-service</artifactId>
+    <artifactId>ssmc-log</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>user-api-service</module>
-        <module>goods-api-service</module>
+        <module>ssmc-user-log</module>
     </modules>
 
     <dependencies>
-        <!--配置feign的客户端-->
+        <!--整合mongodb-->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+        </dependency>
+        <!--引入实体类-->
+        <dependency>
+            <groupId>com.great</groupId>
+            <artifactId>ssmc-entry</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
 </project>

@@ -3,10 +3,5 @@ spring:
     consul:
       host: 127.0.0.1
       port: 8500
-  mvc:
-    view:
-      suffix: .html
-
-      prefix: classpath:/templates/
 server.port: 9001
-spring.application.name: user-service-impl
+spring.application.name: user-service

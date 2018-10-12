@@ -3,5 +3,5 @@ spring:
     consul:
       host: 127.0.0.1
       port: 8500
-server.port: 9000
-spring.application.name: user-controller
+server.port: 9010
+spring.application.name: goods-controller

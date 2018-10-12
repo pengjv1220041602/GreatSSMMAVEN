@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+  mvc:
+    view:
+      suffix: .html
+
+      prefix: classpath:/templates/
+server.port: 9002
+spring.application.name: goods-service

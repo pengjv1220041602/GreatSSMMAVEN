@@ -13,10 +13,11 @@
     <packaging>pom</packaging>
     <modules>
         <module>user-controller</module>
-        <module>error-controller</module>
+        <module>goods-controller</module>
     </modules>
 
     <dependencies>
+        <!--配置thymeleaf的页面-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -27,7 +28,11 @@
             <artifactId>ssmc-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--引用entry-->
+        <dependency>
+            <groupId>com.great</groupId>
+            <artifactId>ssmc-entry</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
-
-
 </project>
